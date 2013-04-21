@@ -14,7 +14,6 @@ from dragonfly import *
 from htmlTags import *
 from _namingcon import *
 import sys
-import ctypes
 
 release = Key("shift:up, ctrl:up")
 locationNum=False
@@ -174,7 +173,6 @@ def listAttributes():
 	print v
 	print "\n</ATTRIBUTES>\n"
 	global variable
-	ctypes.windll.user32.MessageBoxW(0, u"%s"%v, u"Attributes", 0) 
 
 def listTags():
 	natlink.displayText("hello",0)
